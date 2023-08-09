@@ -1,0 +1,26 @@
+import * as React from 'react'
+import { NextPage } from 'next'
+
+const IndexPage: NextPage = () => {
+  const [countries, setCountries] = React.useState<string[]>([])
+
+  return (
+    <>
+      {
+        ["Dallas", "Oregon", "New York", "California"].map((x: string) =>
+          <button onClick={() => {
+          // either this
+          setCountries(countries.concat(x))
+          // or
+          setCountries([...countries, x]
+          }>
+            <span>{x}</span>                  
+          </button>
+        )
+      }
+    <>
+  )
+}
+
+
+https://bobbyhadz.com/blog/react-push-to-state-array

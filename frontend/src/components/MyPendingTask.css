@@ -1,0 +1,86 @@
+.main-aside {
+    background: #fff;
+    z-index: 1020;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-right: 1px solid #e6eef1
+}
+
+.main-main-content {
+    padding: 0px 0px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.main-content {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    position: relative;
+    height: 100%
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .main-content {
+        -webkit-transition: none;
+        transition: none
+    }
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .main-main-content {
+        -webkit-transition: none;
+        transition: none
+    }
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .main-aside {
+        -webkit-transition: none;
+        transition: none
+    }
+}
+
+@media (min-width:768px) {
+    .main-aside {
+        /* position: relative; */
+        left: 2rem;
+        width: 230px;
+        /* top: 2.5rem; */
+        overflow: auto;
+        bottom: 0
+    }
+}
+
+.customDatePickerWidth,
+.customDatePickerWidth>div.react-datepicker-wrapper,
+.customDatePickerWidth>div>div.react-datepicker__input-container .customDatePickerWidth>div>div.react-datepicker__input-container input {
+    width: 200px;
+}
+
+.dropdown-divider {
+    height: 0;
+    margin: 0rem 0;
+    overflow: hidden;
+    border-top: 1px solid #CFD8DC
+}
+
+.aside-link {
+    background-image: linear-gradient(to left, #FFFFFF, #FFFFFF);
+    color: #000;
+    text-align: left;
+    font-family: Verdana;
+}
+
+.aside-link:hover {
+    background-image: linear-gradient(to left, #74D680, #378B29);
+    color: #FFFFFF;
+    text-align: left;
+    font-family: Verdana;
+}
+
+.aside-link.active {
+    background-image: linear-gradient(to left, #74D680, #378B29);
+    color: #FFFFFF;
+    text-align: left;
+    font-family: Verdana;
+}
